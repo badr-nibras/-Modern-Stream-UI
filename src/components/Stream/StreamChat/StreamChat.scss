@@ -1,0 +1,105 @@
+.playback {
+    position: relative;
+    display: flex;
+    min-height: var(--player-height);
+
+    .chat {
+        flex: 2;
+        margin-right: var(--mb-1);
+        background-color: var(--container-color);
+        border-radius: 0.25rem;
+        display: flex;
+        flex-direction: column;
+
+        .messages {
+            flex: 1;
+            padding: var(--mb-0-5);
+            overflow-y: auto;
+
+            .message {
+                display: flex;
+
+                p {
+                    color: var(--first-color);
+                    margin-right: var(--mb-0-25);
+                }
+
+                span {
+                    color: var(--text-color);
+                    font-size: var(--smaller-font-size);
+                }
+            }
+        }
+
+        .chat_text {
+            display: flex;
+
+            .input:first-child {
+               flex: 1;
+            }
+
+            .button {
+                flex: 1;
+            }
+        }
+    }
+
+    .chat_text {
+        display: none;
+    }
+
+    .player {
+        background-color: black;
+        flex: 5;
+        
+        .playback_player {
+            min-height: var(--player-height);
+        }
+    }
+}
+
+.playback_section {
+    padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .playback {
+        flex-direction: column;
+        overflow: hidden;
+
+        .chat {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+            height: 100%;
+            width: 50%;
+            background-color: rgba(0, 0, 0, 0.6) !important;
+            transition: 0.2s;
+    
+            .chat_text {
+                display: none !important;
+            }
+        }
+
+        .panleft {
+            left: -100%;
+        }
+        .panright {
+            left: 100%;
+        }
+
+        .chat_text {
+            display: flex !important;
+            z-index: 99;
+
+            .input:first-child {
+                flex: 1;
+            }
+
+            .button {
+                flex: 1;
+            }
+        }
+    }
+}

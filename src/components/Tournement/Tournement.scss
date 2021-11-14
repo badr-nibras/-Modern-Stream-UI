@@ -1,0 +1,87 @@
+.tournement {
+  padding: var(--mb-1);
+  position: relative;
+  
+  img{
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+  }
+
+  .header_section {
+    margin-bottom: var(--mb-3);
+  }
+
+  .tournement_container {
+    row-gap: 2rem;
+
+    .inputs-grid {
+      gap: 2rem;
+    }
+
+    .button {
+      width: 12rem;
+    }
+  }
+}
+.game-element {
+
+  ul:nth-child(2) {
+    display: flex;
+    list-style: none;
+    text-align:center;
+    margin-top: 10px;
+  }
+
+  li {
+    margin-right: 10px;
+  }
+
+  .game {
+    width: 70px;
+    height: 70px;
+    background-position: center;
+    background-size: contain;
+    border: 2px solid var(--first-color);
+    cursor: pointer;
+  }
+
+  .game-circle {
+    border-radius: 50%;
+  }
+
+  .disabled {
+    filter: grayscale(80%);
+  }
+}
+
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  
+}
+
+@media screen and (min-width: 350px) {
+  
+}
+
+/* For medium devices */
+@media screen and (min-width: 568px) {
+  .tournement {
+    padding: var(--mb-2-5);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .inputs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  
+}
+
+
+

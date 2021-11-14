@@ -1,0 +1,56 @@
+
+.live_video {
+    position: relative;
+
+    .live_icon {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        z-index: 99;
+        background-color: rgb(228, 68, 68);
+        padding: 0.125rem 0.75rem;
+        border-radius: 5rem;
+        text-align: center;
+        color: var(--white-color);
+        font-weight: 500;
+        font-size: var(--smaller-font-size);
+        cursor: pointer;
+    }
+
+    img {
+        width: 280px;
+        height: 170px;
+        max-height: 170px;
+        border-radius: 5px;
+    }
+
+    img:hover {
+        filter: grayscale(80%);
+    }
+
+    img, .live_title, .username {
+        cursor: pointer;
+    }
+
+    .live_infos {
+        margin-left: var(--mb-0-5);
+
+        .live_title {
+            font-size: var(--small-font-size);
+            color: var(--first-color-alt);
+        }
+
+        .live_title:hover {
+            color: var(--first-color);
+        }
+        
+        .details {
+            margin-top: var(--mb-0-75);
+        }
+
+        .username {
+            margin-top: -0.25rem;
+        }
+    }
+    
+}

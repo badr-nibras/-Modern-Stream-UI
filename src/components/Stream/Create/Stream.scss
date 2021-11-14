@@ -1,0 +1,128 @@
+:root {
+    --player-height: 45vh;
+}
+
+.header_section {
+    margin-bottom: var(--mb-1-5);
+}
+
+.stream {
+    padding: var(--mb-2-5);
+
+    .settings {
+        padding: var(--mb-1-5);
+        border-radius: 0.25rem;
+        background-color: var(--container-color);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+
+        .settings-row {
+            display: flex;
+            align-items: center;
+
+            .row_label {
+                flex: 1;
+
+                p {
+                    font-size: var(--smaller-font-size);
+                }
+            }
+
+            .row_content {
+                flex: 2;
+                display: grid;
+                grid-template-columns: 6fr 1fr;
+                column-gap: 0.25rem;
+            }
+
+            .share_section {
+                display: flex;
+                align-items: center;
+
+                .stream_actions {
+                    display: flex;
+                    flex: 1;
+                    align-items: center;
+
+                    .actions_icon {
+                        padding: var(--mb-0-25) var(--mb-0-5);
+                        margin: 0 var(--mb-0-25);
+                        background-color: rgba(0, 0, 0, 0.2);
+                        border-radius: 0.25rem;
+                        cursor: pointer;
+                        font-size: 1.125rem;
+                    }
+
+                    .disabled {
+                        background-color: rgb(163, 41, 41);
+                    }
+                }
+            }
+            .stream_key {
+                grid-template-columns: 5fr 1fr 1fr;
+            }
+        }
+    }
+
+    .stream_info {
+
+        .miniature {
+            display: flex;
+            align-items: center;
+
+            img {
+                max-height: 200px;
+                margin-right: var(--mb-2);
+            }
+
+            .upload {
+                display: grid;
+                grid-template-columns: 150px 1fr;
+                column-gap: 1rem;
+                align-items: center;
+
+                .button {
+                    margin-right: var(--mb-1);
+                }
+            }
+        }
+
+        .small {
+            width: 12rem;
+        }
+    }
+}
+
+.settings_section, 
+.streaminfo_section {
+    padding-bottom: 4rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .stream {
+        padding: var(--mb-1);
+    }
+
+    .settings {
+
+        .settings-row {
+            flex-direction: column;
+            
+            .row_content {
+                margin-top: var(--mb-1);
+            }
+        }
+    }
+
+    .stream_info {
+
+        .miniature {
+            flex-direction: column;
+            align-items: flex-start !important;
+
+            .upload {
+                margin-top: var(--mb-1-5);
+            }
+        }
+    }
+}

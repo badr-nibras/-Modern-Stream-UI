@@ -1,0 +1,119 @@
+
+
+.login_content {
+    position: absolute;
+    left: 50%;
+
+    .login {
+        position: relative;
+        z-index: 50;
+        top: 3rem;
+        left: -50%;
+        text-align: center;
+        row-gap: 0.75rem;
+        grid-template-columns: 20rem;
+       
+      
+      
+    
+        img {
+            max-width: 200px;
+            justify-self: center;
+        }
+    
+        a {
+            color: var(--title-color-light);
+            text-decoration: underline;
+            font-size: var(--small-font-size);
+        }
+    
+        a > span:hover {
+            color: var(--title-color);
+        }
+
+        hr {
+            margin: 0;
+        }
+        .right {
+            float: right;
+
+        }
+        .left {
+            float: left;
+        }
+
+        
+    }
+}
+
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .login_content {
+        left: 0;
+
+        .login {
+            left: 0;
+            grid-template-columns: 18rem !important;
+    
+            img {
+                max-width: 150px !important;
+            }
+        }
+    }
+}
+@media screen and (min-width:200px) {
+    .login_content {
+        left: -3%;
+
+        .login {
+            left: 5%;
+        }
+    }
+}
+
+@media screen and (min-width:290px) {
+    .login_content {
+        left: -5%;
+
+        .login {
+            left: 5%;
+        }
+    }
+}
+
+@media screen and (min-width:350px) {
+    .login_content {
+        left: -12%;
+
+        .login {
+            left: 10%;
+        }
+    }
+}
+@media screen and (min-width:400px) {
+    .login_content {
+        left: -3%;
+
+        .login {
+            left: 10%;
+        }
+    }
+}
+
+
+/* For medium devices */
+@media screen and (min-width:568px) {
+    .login_content {
+        left: 10%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+}
+
+/* For large devices */
+@media screen and (min-width:1024px) {
+    
+}

@@ -1,0 +1,73 @@
+.social-media {
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+
+    .social-media-icon:hover {
+        cursor: pointer;
+        font-size: 1.8rem;
+    }
+
+    .social-media-icon {
+        background-color: var(--white-color);
+        margin: auto;
+        display: flex;
+        padding: 0.5rem;
+        border-radius: 50%;
+        font-size: 1.4rem;
+        transition: 0.4s;
+    }
+
+    .social-icon {
+        width: 100%;
+        padding: 10px 10px 10px 0px;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        box-shadow: rgb(0 0 0 / 24%) 0px 2px 2px 0px, rgb(0 0 0 / 24%) 0px 0px 1px 0px;
+        border-radius: 2px;
+        border: 1px solid transparent;
+        font-size: 14px;
+        font-family: Roboto, sans-serif;
+        cursor: pointer;
+    }
+
+    .button_icon {
+        font-size: 1.35rem;
+        margin-right: 0.75rem;
+    }
+
+    .facebook {
+        color: var(--white-color);
+        background-color: #1877F2;
+    }
+
+    .facebook:hover {
+        background-color: #1876f2bd;
+    }
+
+    .apple {
+        color: black;
+    }
+
+    .google {
+        color: gray;
+        background-color: #f0f0f0;   
+    }
+    .google:hover {
+        background-color: #fdfeffbd;
+    }
+    .social-auth {
+        cursor: pointer;
+        height: 2.4rem;
+        border-radius: 2px;
+        vertical-align: middle;
+        line-height: 2.4rem;
+        text-align: center;
+        justify-content: center;
+        svg{
+            margin-right: .4rem;
+            transform: translateY(10%);
+        }
+    }
+}

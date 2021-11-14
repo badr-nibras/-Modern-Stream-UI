@@ -1,0 +1,29 @@
+.game-element {
+  ul:nth-child(2) {
+    display: flex;
+    list-style: none;
+    text-align:center;
+    margin-top: 10px;
+ 
+    
+  }
+
+  li {
+    margin-right: 10px;
+  }
+
+  .game {
+    width: 70px;
+    height: 70px;
+    background-position: center;
+    background-size: contain;
+    border: 2px solid var(--first-color);
+    cursor: pointer;
+  }
+ 
+  
+
+  .game-circle {
+    border-radius: 50%;
+  }
+}

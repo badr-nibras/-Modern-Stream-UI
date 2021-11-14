@@ -1,0 +1,19 @@
+.game_card {
+    cursor: pointer;
+
+    .live_title {
+        color: var(--title-color);
+        font-size: var(--title-font-size);
+        margin-bottom: -0.25rem;
+    }
+
+    img {
+        border-radius: 5px;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    img:hover {
+        filter: grayscale(80%);
+    }
+}

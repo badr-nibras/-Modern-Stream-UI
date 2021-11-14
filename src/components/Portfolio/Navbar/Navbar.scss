@@ -1,0 +1,107 @@
+.Main-nav {
+  .NavBar {
+    height: 10px;
+
+    .txt3,
+    .link {
+      display: inline;
+      cursor: pointer;
+
+      font-weight: 700;
+
+      font-size: 20px;
+
+      letter-spacing: 2px;
+      color: rgb(228, 228, 228);
+      
+    }
+    .ico {
+      font-size: 20px;
+      padding-top: 2px;
+    }
+
+    
+
+    .naav {
+      padding-top: 28px;
+      padding-bottom: 20px;
+      text-align: center;
+
+      background-color: var(--body-color);
+      position: absolute;
+      width: 100%;
+      border-bottom: solid rgb(13, 177, 177, 0.9) 3px;
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+     
+      ul li {
+        display: inline;
+      }
+     
+    }
+
+    @media (max-width: 1080px) {
+      .block {
+        display: none;
+      }
+      .link {
+        margin-left: 5.7%;
+        margin-right: 5.7%;
+      }
+    }
+    .active_link {
+      border-bottom: 3px solid rgb(7, 189, 174);
+      color: rgb(7, 189, 180);
+    }
+
+    .link:hover {
+      color: rgb(7, 189, 189);
+    }
+
+    .Nav {
+      position: relative;
+      z-index: 3;
+    }
+
+    .Nav__black {
+      top: -10px;
+      z-index: 100;
+      background: rgba(30, 33, 36, 0.85);
+      position: fixed;
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      .ico {
+        font-size: 16px;
+      }
+      .link {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .ico {
+        font-size: 12px;
+      }
+      .link {
+        margin-left: 4%;
+        margin-right: 4%;
+      }
+    }
+
+    @keyframes animnav {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+    #animnav {
+      animation: animnav 1s linear 0s;
+    }
+  }
+}

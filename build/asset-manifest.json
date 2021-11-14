@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b89b8f41.chunk.css",
+    "main.js": "/static/js/main.2c84acf6.chunk.js",
+    "main.js.map": "/static/js/main.2c84acf6.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.76bb3450.js",
+    "runtime-main.js.map": "/static/js/runtime-main.76bb3450.js.map",
+    "static/css/2.16ed8b7f.chunk.css": "/static/css/2.16ed8b7f.chunk.css",
+    "static/js/2.f1755330.chunk.js": "/static/js/2.f1755330.chunk.js",
+    "static/js/2.f1755330.chunk.js.map": "/static/js/2.f1755330.chunk.js.map",
+    "static/js/3.17bbc156.chunk.js": "/static/js/3.17bbc156.chunk.js",
+    "static/js/3.17bbc156.chunk.js.map": "/static/js/3.17bbc156.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.16ed8b7f.chunk.css.map": "/static/css/2.16ed8b7f.chunk.css.map",
+    "static/css/main.b89b8f41.chunk.css.map": "/static/css/main.b89b8f41.chunk.css.map",
+    "static/js/2.f1755330.chunk.js.LICENSE.txt": "/static/js/2.f1755330.chunk.js.LICENSE.txt",
+    "static/media/background_profil.fdf7ddcd.jpg": "/static/media/background_profil.fdf7ddcd.jpg",
+    "static/media/banner1.459a44a2.jpg": "/static/media/banner1.459a44a2.jpg",
+    "static/media/banner3.6b7f64a8.jpg": "/static/media/banner3.6b7f64a8.jpg",
+    "static/media/banner4.000cfad0.jpg": "/static/media/banner4.000cfad0.jpg",
+    "static/media/card1.5c43e36e.jpg": "/static/media/card1.5c43e36e.jpg",
+    "static/media/card2.6f90de55.jpg": "/static/media/card2.6f90de55.jpg",
+    "static/media/card3.17c6c5f5.jpg": "/static/media/card3.17c6c5f5.jpg",
+    "static/media/card4.f2747192.jpeg": "/static/media/card4.f2747192.jpeg",
+    "static/media/game1.eeedcc5a.jpg": "/static/media/game1.eeedcc5a.jpg",
+    "static/media/game2.74d07e5f.jpg": "/static/media/game2.74d07e5f.jpg",
+    "static/media/game3.412dfa4d.jpg": "/static/media/game3.412dfa4d.jpg",
+    "static/media/game4.c45737f1.jpg": "/static/media/game4.c45737f1.jpg",
+    "static/media/gameCover.9a08d357.jpg": "/static/media/gameCover.9a08d357.jpg",
+    "static/media/live1.71eae9c1.jpg": "/static/media/live1.71eae9c1.jpg",
+    "static/media/logo.9f823dc7.png": "/static/media/logo.9f823dc7.png",
+    "static/media/winner.b11f27d2.png": "/static/media/winner.b11f27d2.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.76bb3450.js",
+    "static/css/2.16ed8b7f.chunk.css",
+    "static/js/2.f1755330.chunk.js",
+    "static/css/main.b89b8f41.chunk.css",
+    "static/js/main.2c84acf6.chunk.js"
+  ]
+}

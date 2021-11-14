@@ -1,0 +1,114 @@
+.home {
+    padding: var(--mb-1);
+}
+
+.section_header {
+    margin-bottom: var(--mb-1-5);
+
+    span {
+        // padding: 0.125rem 0.5rem;
+        font-size: var(--smaller-font-size);
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: underline;
+
+        .icon {
+            font-size: 1.5rem;
+            transition: 0.3s;
+        }
+    }
+
+    span:hover {
+        .icon {
+            transform: translateX(5px);
+        }
+    }
+}
+
+.live_videos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1.5rem;
+}
+
+.channels {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 0.5rem;
+    justify-content: space-between;
+    
+
+    .channel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-right: var(--mb-1-5);
+        transition: 0.3s;
+        cursor: pointer;
+    }
+}
+
+.games {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+hr {
+    margin: 1rem 0;
+}
+
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    
+}
+
+@media screen and (min-width: 350px) {
+    
+}
+
+/* For medium devices */
+@media screen and (min-width:568px) {
+    .home {
+        padding: var(--mb-2-5);
+    }
+    .channels {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+    .games {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .live_videos {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .channels {
+        grid-template-columns: repeat(6, 1fr) !important;
+    }
+    .games {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+    .section_header {
+        display: flex ;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width:1024px) {
+    .live_videos {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+    .channels {
+        grid-template-columns: repeat(9, 1fr) !important;
+    }
+    .games {
+        grid-template-columns: repeat(5, 1fr) !important;
+    }
+}

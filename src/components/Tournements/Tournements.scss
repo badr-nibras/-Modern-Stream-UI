@@ -1,0 +1,54 @@
+.tournements_container {
+  row-gap: 2rem;
+}
+
+.card {
+  
+  .card-header{
+    height: 180px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  .card-header:hover {
+    filter: grayscale(80%);
+  }
+  
+  .card-body {
+    margin-top: var(--mb-0-5);
+
+    .body-content {
+      margin-bottom: var(--mb-0-5);
+    }
+  }
+}
+
+
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    
+}
+
+@media screen and (min-width: 350px) {
+    
+}
+
+/* For medium devices */
+@media screen and (min-width:568px) {
+  .tournements_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  
+}
+
+/* For large devices */
+@media screen and (min-width:1024px) {
+  .tournements_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

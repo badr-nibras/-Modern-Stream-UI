@@ -1,0 +1,118 @@
+.sidemenu {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--body-color);
+    // border-radius: 0rem 0.5rem 0.5rem 0rem;
+    box-shadow: 5px 0px 6px rgba(6, 126, 90, 0.1);
+    height: 100%;
+
+    hr {
+        margin: var(--mb-1-5) 0;
+        color: rgba(233, 233, 233, 0.198);
+    }
+
+    .Toggle-icon {
+        display: inline-block;
+        width: 100%;
+        font-size: 28px;
+        color: var(--first-color);
+        
+        cursor: pointer;
+        
+       
+    }
+    .toggle_support{
+        
+        padding: .7em;
+        cursor: pointer;
+    }
+
+    .link {
+        text-align: center;
+        color: var(--text-color);
+        padding: var(--mb-0-75) 0;
+        cursor: pointer;
+
+        .menu-icon {
+            font-size: 1.3rem;
+        }
+
+        span {
+            display: none;
+            margin-left: var(--mb-1-5);
+            font-size: var(--small-font-size);
+        }
+    }
+
+    .active_link {
+        background-color: rgba(0, 0, 0, 0.212);
+    }
+
+    a:hover {
+        background-color: rgba(212, 212, 212, 0.13);
+    }
+    p:hover {
+        background-color: rgba(212, 212, 212, 0.13);
+    }
+}
+
+@keyframes scaleWidth {
+    0% {
+        width: var(--sidemenu-width);
+    } 100% {
+        width: var(--sidemenu-open);
+    }
+}
+
+.sidemenuhover {
+    position: relative;
+    z-index: 999;
+    animation: 100ms scaleWidth ease;
+    width: var(--sidemenu-open);
+
+    .link {
+        display: flex;
+        padding: var(--mb-1) var(--mb-2) !important;
+        span {
+            display: block;
+        }
+    }
+}
+
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+
+}
+
+@media screen and (min-width: 350px) {
+    
+}
+
+/* For medium devices */
+@media screen and (min-width:568px) {
+
+}
+
+@media (max-width: 768px) {
+   
+    
+    
+    
+}
+
+/* For large devices */
+@media screen and (min-width:1024px) {
+    .link {
+        display: flex;
+        padding: var(--mb-1) var(--mb-2) !important;
+
+        span {
+            display: block !important;
+        }
+    }
+    .Toggle-icon {
+        display: none !important;
+    }
+    
+}

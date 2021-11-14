@@ -1,0 +1,76 @@
+.signup {
+    margin-top: calc(var(--header-height));
+    padding: 2rem;
+
+    .signup_container {
+
+        .form-group {
+
+            span {
+                color: var(--first-color);
+            }
+        }
+
+        .button {
+            width: 50%;
+            margin: auto;
+        }
+    
+        a {
+            color: var(--text-color);
+            margin: auto;
+            
+            span {
+                text-decoration: underline;
+                font-size: var(--small-font-size);
+    
+                span {
+                    color: var(--first-color);
+                }
+            }
+        }
+
+        hr {
+            margin: 0;
+        }
+    }
+}
+
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .signup {
+        padding: 2rem 0rem;
+
+        .button {
+            width: 70% !important;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (min-width:350px) {
+    .signup {
+        padding: 2rem 0rem;
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width:568px) {
+    .signup {
+        padding: 3rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .signup {
+        padding: 5rem 10rem;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width:1024px) {
+    .signup {
+        padding: 5rem 20rem;
+    }
+}
